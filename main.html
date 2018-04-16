@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Portfolio | Ivan Kozhokar</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+			padding: 0;
+	}
+		body{
+			background-color: #e6f2ff;
+			margin: 0;
+			padding: 0;
+
+		}
+		header{
+			min-height: 150px;
+		}
+
+		.container{
+			width: 75%;
+			
+			float:right;
+			padding-top: 15px;
+			margin-right: 40px;
+			padding-bottom: 10px;
+			border-bottom: 3px solid #7d97ad;
+		}
+
+		.container2{
+			
+			min-height: 400px;
+		}
+		#icon{
+			float: left;
+			width: 135px;
+			height: 130px;
+			border: 1px solid #7d97ad;
+		}
+
+		#name{
+			float: right;
+			padding-right: 40px;
+			padding-top: 55px;
+			text-align: right;
+			color: #2d3c49;
+			font: bold 24px Arial, Helvetica, sans-serif;
+		}
+		#ivan{
+			font-size: 28px;
+			padding-bottom: 10px;
+		}
+
+		.mainpic{
+			float: right;
+			padding-top: 15px;
+			margin-right: 40px;
+			width: 75%;
+			height: 350px;
+		}
+		#bar {
+			float: left;
+			margin-left: 50px;
+
+		}
+
+		.list1, .list2, .list3 {
+			list-style: none;
+			font:bold 14px Arial, Helvetica, sans-serif;
+			color: #2d3c49;
+			text-align: center;
+			min-height: 120px;
+			margin: 10px;
+		}
+
+		#bar .list1,  .list2,  .list3, img{
+			width: 105px;
+			height: 90px;
+			
+		}
+
+		#boxes{
+			width:75%;
+			float:right;
+			display: inline;
+			
+
+		}
+		#boxes .box1, .box2, .box3
+		{
+			width: 25%;
+			float:left;
+			padding-left: 60px;
+			padding-right: 60px;
+			font:bold 16px Arial, Helvetica, sans-serif;
+			color: #2d3c49;
+			text-align: center;
+		}
+
+		#boxes .box1,.box2,.box3
+		{
+			width: 260px;
+			height: 160px;
+			padding: 10px;
+			
+		}
+
+		#work{
+			font:bold 18px Arial, Helvetica, sans-serif;
+			color: #2d3c49;
+			padding-left: 15px;
+		}
+		@media screen and (max-width: 490px)
+		{	
+			body{
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.mainpic{
+				position: absolute;
+				transform: translate(-500px,0);
+			}
+			.container{
+				width:100%;
+				display: flex;
+				flex-wrap: wrap;
+				margin-right: 0px;
+				float: none;
+			}
+			#icon{
+				position: absolute;
+				transform: translate(-500px,0);
+			}
+			#name{
+				padding-right: 10px;
+				padding-top: 15px;
+				text-align:center;
+			}
+			}
+			
+			@media screen and (max-width: 641px) and (min-width: 490px){
+			.container{
+				width:100%;
+				display: flex;
+				flex-wrap: wrap;
+				margin-right: 0px;
+				float: none;
+			}
+			#icon{
+				position: absolute;
+				transform: translate(-500px,0);
+			}
+			#bar{
+				display: flex;
+				flex-wrap: wrap;
+			}
+				.list1, .list2, .list3 {
+					
+				position: absolute;
+				transform: translate(-1000px,0);
+			}
+			#name{
+				padding-left:145px;
+				padding-top: 55px;
+				text-align:center;
+			}
+
+		}
+		@media screen and (max-width: 877px) and (min-width: 700px){
+			#boxes{
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.box1, .box2, .box3 {
+				width: 33%;
+				
+			}
+			#work{
+				position: absolute;
+				transform: translate(-1000px,0);
+			}
+		}
+
+			@media screen and (max-width: 877px) and (min-width: 490px){
+				
+			#bar{
+				display: flex;
+				flex-wrap: wrap;
+			}
+				.list1, .list2, .list3 {
+					
+				position: absolute;
+				transform: translate(-1000px,0);
+			}
+			}
+		
+	
+	</style>
+		
+</head>
+<body>
+	<header>
+		<div class="container">
+			<img id="icon" src="images/man.jpg">
+			<div id="name">
+
+			<p id="ivan">IVAN KOZHOKAR</p>
+			<p>Front end Web Developer</p>
+			</div>
+		</div>
+	</header>
+
+	<section>
+	<div class="container2">
+		<img class="mainpic" src="images/man1.jpg">
+		<div id="bar">
+			<div class="list1"><img src="images/icon.png"><p>Hardworking Person</p></div>
+			
+			<div class="list2"><img src="images/team.png"><p>Team Player</p></div>
+			
+			<div class="list3"><img src="images/beard.png"><p>Quick Learner</p></div>
+			
+		</div>
+		</div>
+	</section>
+
+	
+	<div id="boxes">
+	<p id="work">Featured Works: </p>
+	<div class="box1"><img src="images/breakwall.jpg"><p>Check out my Breaking Ball Game in my Github repository</p></div>
+	<div class="box2"><img src="images/Ferrari.png"><p>Check out my Ferrari web site in my Github repository</p></div>
+	<div class="box3"><img src="images/guitar.png"><p>Check out my AC/DC web site in my Github repository</p></div>
+	</div>
+	
+</body>
+</html>
